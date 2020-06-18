@@ -8,8 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("home")
 public class HiController {
 
+    /**
+     * 配置文件中的属性 key
+     */
     @Value("${foo}")
-    String foo;
+    private String foo;
 
     @RequestMapping("/hi")
     public String hi(){
